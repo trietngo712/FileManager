@@ -1,0 +1,7 @@
+.mfx-text-field {
+	-mfx-main: -mfx-blue;
+}
+
+.mfx-text-field .floating-text {
+	-fx-font-family: "Roboto Bold";
+}

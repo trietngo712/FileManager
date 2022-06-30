@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="522.0" prefWidth="694.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ViewController.AddViewController">
+   <children>
+      <SplitPane dividerPositions="0.7" layoutX="6.0" layoutY="6.0" prefHeight="160.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <MFXTextField borderGap="0.0" floatMode="ABOVE" floatingText="MSHH" floatingTextGap="0.0" graphicTextGap="0.0" layoutX="15.0" layoutY="24.0" prefHeight="38.0" prefWidth="84.0" stylesheets="@TextField.css" />
+                  <MFXTextField borderGap="0.0" floatMode="ABOVE" floatingText="Nhóm Sản Phẩm" floatingTextGap="0.0" graphicTextGap="0.0" layoutX="104.0" layoutY="24.0" prefHeight="38.0" prefWidth="148.0" stylesheets="@TextField.css" />
+                  <MFXTextField borderGap="0.0" floatMode="ABOVE" floatingText="Loại Sản Phẩm" floatingTextGap="0.0" graphicTextGap="0.0" layoutX="259.0" layoutY="24.0" prefHeight="38.0" prefWidth="141.0" stylesheets="@TextField.css" />
+                  <MFXTextField borderGap="0.0" floatMode="ABOVE" floatingText="Nhà Sản Xuất" floatingTextGap="0.0" graphicTextGap="0.0" layoutX="13.0" layoutY="88.0" prefHeight="38.0" prefWidth="182.0" stylesheets="@TextField.css"/>
+                  <MFXTextField borderGap="0.0" floatMode="ABOVE" floatingText="Số Chứng Từ Nhà Sản Xuất" floatingTextGap="0.0" graphicTextGap="0.0" layoutX="15.0" layoutY="151.0" prefHeight="38.0" prefWidth="390.0" stylesheets="@TextField.css"/>
+                  <MFXTextField borderGap="0.0" floatMode="ABOVE" floatingText="Nước Sản Xuất" floatingTextGap="0.0" graphicTextGap="0.0" layoutX="13.0" layoutY="285.0" prefHeight="38.0" prefWidth="182.0" stylesheets="@TextField.css"/>
+                  <MFXTextField borderGap="0.0" floatMode="ABOVE" floatingText="Nước Chủ Sở Hữu" floatingTextGap="0.0" graphicTextGap="0.0" layoutX="210.0" layoutY="285.0" prefHeight="38.0" prefWidth="195.0" stylesheets="@TextField.css"/>
+                  <MFXTextField borderGap="0.0" floatMode="ABOVE" floatingText="Số Chứng Từ HL" floatingTextGap="0.0" graphicTextGap="0.0" layoutX="15.0" layoutY="215.0" measureUnitGap="0.0" prefHeight="38.0" prefWidth="390.0" stylesheets="@TextField.css"/>
+                  <MFXTextField borderGap="0.0" floatMode="ABOVE" floatingText="Chủ Sở Hữu" floatingTextGap="0.0" graphicTextGap="0.0" layoutX="213.0" layoutY="88.0" prefHeight="38.0" prefWidth="189.0" stylesheets="@TextField.css"/>
+                  <MFXTextField borderGap="0.0" floatMode="ABOVE" floatingText="Mã Số BHXH" floatingTextGap="0.0" graphicTextGap="0.0" layoutX="14.0" layoutY="352.0" prefHeight="38.0" prefWidth="231.0"  stylesheets="@TextField.css"/>
+                  <MFXDatePicker borderGap="0.0" floatMode="ABOVE" floatingText="Ngày Hết Hạn" floatingTextGap="0.0" graphicTextGap="0.0" layoutX="252.0" layoutY="352.0" prefHeight="38.0" prefWidth="154.0" stylesheets="@TextField.css"/>
+                  <MFXTextField floatMode="ABOVE" floatingText="ISO" floatingTextGap="0.0" graphicTextGap="0.0" layoutX="13.0" layoutY="415.0" measureUnitGap="0.0" prefHeight="38.0" prefWidth="308.0"  stylesheets="@TextField.css"/>
+                  <MFXButton depthLevel="LEVEL1" layoutX="330.0" layoutY="415.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="84.0" rippleColor="#d0d0d0" text="Pick File" />
+                  <MFXButton layoutX="330.0" layoutY="468.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="84.0" text="Add" />
+               </children></AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="406.0" prefWidth="176.0" />
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
