@@ -1,8 +1,7 @@
 ViewController\MainViewController.class
 Model\AbstractModel.class
 Model\DocumentModel.class
-com\minhtriet\filemanager\HelloApplication.class
 module-info.class
-com\minhtriet\filemanager\HelloController.class
+com\minhtriet\filemanager\Application.class
 ViewController\AddViewController.class
 ViewController\SearchViewController.class

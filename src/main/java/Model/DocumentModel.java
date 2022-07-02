@@ -3,6 +3,19 @@ package Model;
 import java.time.LocalDate;
 
 public class DocumentModel extends AbstractModel{
+
+    final static public String maSoHangHoaPropertyName = "MaSoHangHoa";
+    final static public String chuSoHuuPropertyName = "ChuSoHuu";
+    final static public String nhaSanXuatPropertyName = "NhaSanXuat";
+    final static public String ngayHetHanPropertyName = "NgayHetHan";
+    final static public String nuocSanXuatPropertyName = "NuocSanXuat";
+    final static public String nuocChuSoHuuPropertyName = "NuocChuSoHuu";
+    final static public String nhomSanPhamPropertyName = "NhomSanPham";
+    final static public String loaiSanPhamPropertyName = "LoaiSanPham";
+    final static public String maSoBaoHiemXaHoiPropertyName = "MaSoBaoHiemXaHoi";
+    final static public String soChungTuNhaSanXuatPropertyName = "SoChungTuNhaSanXuat";
+    final static public String soChungTuHLPropertyName = "SoChungTuHL";
+
     private String maSoHangHoa;
     private String chuSoHuu;
     private String nhaSanXuat;
@@ -20,7 +33,10 @@ public class DocumentModel extends AbstractModel{
     }
 
     public void setMaSoHangHoa(String maSoHangHoa) {
+        String oldMaSoHangHoa = this.maSoHangHoa;
         this.maSoHangHoa = maSoHangHoa;
+
+        this.propertyChangeSupport.firePropertyChange(maSoHangHoaPropertyName, oldMaSoHangHoa, this.maSoHangHoa);
     }
 
     public String getChuSoHuu() {
