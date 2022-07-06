@@ -1,5 +1,6 @@
 .mfx-text-field {
 	-mfx-main: -mfx-blue;
+	-fx-border-style: hidden hidden solid hidden;
 }
 
 .mfx-text-field .floating-text {
