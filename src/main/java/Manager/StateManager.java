@@ -3,10 +3,10 @@ package Manager;
 import javafx.stage.Stage;
 
 public class StateManager {
-    public static StateManager stateManagerInstance;
+    private static StateManager stateManagerInstance;
     public static Stage primaryStage;
 
-    public StateManager getInstance () {
+    public static StateManager getInstance () {
         if (StateManager.stateManagerInstance != null) {
             return StateManager.stateManagerInstance;
         }

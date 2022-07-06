@@ -1,8 +1,9 @@
 ViewController\MainViewController.class
+ViewController\AbstractViewController.class
+Manager\StateManager.class
 Model\AbstractModel.class
 Model\DocumentModel.class
 module-info.class
-ViewController\AbstractViewController.class
 com\minhtriet\filemanager\Application.class
 ViewController\AddViewController.class
 ViewController\SearchViewController.class

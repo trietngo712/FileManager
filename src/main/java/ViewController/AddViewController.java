@@ -1,5 +1,6 @@
 package ViewController;
 
+import Manager.StateManager;
 import com.dansoftware.pdfdisplayer.PDFDisplayer;
 import com.dansoftware.pdfdisplayer.PdfJSVersion;
 import javafx.event.ActionEvent;
@@ -7,6 +8,7 @@ import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.FileChooser;
 
@@ -21,6 +23,8 @@ public class AddViewController {
     private Button pickFileButton;
 
     private PDFDisplayer pdf;
+    @FXML
+    private TextField isoFileTextField;
 
     public void initialize() {
         //Create node that load and display pdf content
@@ -39,5 +43,16 @@ public class AddViewController {
 
     }
 
-    private void openFileChooser(ActionEvent e) {}
+    private void openFileChooser(ActionEvent e) {
+        FileChooser fileChooser = new FileChooser();
+        File file = fileChooser.showOpenDialog(StateManager.primaryStage);
+
+        this.isoFileTextField.setText(file.getAbsolutePath());
+
+        try {
+            this.pdf.loadPDF(file);
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+    }
 }
