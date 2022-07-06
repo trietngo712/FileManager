@@ -4,6 +4,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
+<?import javafx.scene.web.WebView?>
 <AnchorPane prefHeight="522.0" prefWidth="694.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ViewController.AddViewController">
    <children>
       <SplitPane dividerPositions="0.7" layoutX="6.0" layoutY="6.0" prefHeight="160.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
@@ -25,7 +26,7 @@
                   <MFXButton depthLevel="LEVEL1" layoutX="330.0" layoutY="415.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="84.0" rippleColor="#d0d0d0" text="Pick File" />
                   <MFXButton layoutX="330.0" layoutY="468.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="84.0" text="Add" />
                </children></AnchorPane>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="406.0" prefWidth="176.0" />
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="406.0" prefWidth="176.0" fx:id="PdfView"/>
         </items>
       </SplitPane>
    </children>
